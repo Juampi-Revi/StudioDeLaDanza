@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.titulo-cards, main .section-cards-disciplinas .disciplinas-cards .stretching .titulo-card, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos .titulo-card, main .section-cards-disciplinas .disciplinas-cards .español .titulo-card, main .section-cards-disciplinas .disciplinas-cards .clasico .titulo-card, main .section-cards-disciplinas .disciplinas-cards .tango .titulo-card {
+.titulo-cards, main .section-cards-disciplinas .disciplinas-cards .jazz .titulo-card, main .section-cards-disciplinas .disciplinas-cards .stretching .titulo-card, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos .titulo-card, main .section-cards-disciplinas .disciplinas-cards .español .titulo-card, main .section-cards-disciplinas .disciplinas-cards .clasico .titulo-card, main .section-cards-disciplinas .disciplinas-cards .tango .titulo-card {
   font-size: 4rem;
   font-weight: bold;
   color: #ff4500;
   text-shadow: 4px -2px 6px rgba(5, 2, 1, 0.86);
 }
 
-.button-cards, main .section-cards-disciplinas .disciplinas-cards .stretching button, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos button, main .section-cards-disciplinas .disciplinas-cards .español button, main .section-cards-disciplinas .disciplinas-cards .clasico button, main .section-cards-disciplinas .disciplinas-cards .tango button {
+.button-cards, main .section-cards-disciplinas .disciplinas-cards .jazz button, main .section-cards-disciplinas .disciplinas-cards .stretching button, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos button, main .section-cards-disciplinas .disciplinas-cards .español button, main .section-cards-disciplinas .disciplinas-cards .clasico button, main .section-cards-disciplinas .disciplinas-cards .tango button {
   background-color: #ff4500;
   border-color: #ff4500;
   width: 10rem;
@@ -15,7 +15,7 @@
   box-shadow: 5px 2px 7px 5px rgba(0, 0, 0, 0.49);
 }
 
-.button-hover, main .section-cards-disciplinas .disciplinas-cards .stretching button:hover, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos button:hover, main .section-cards-disciplinas .disciplinas-cards .español button:hover, main .section-cards-disciplinas .disciplinas-cards .clasico button:hover, main .section-cards-disciplinas .disciplinas-cards .tango button:hover {
+.button-hover, main .section-cards-disciplinas .disciplinas-cards .jazz button:hover, main .section-cards-disciplinas .disciplinas-cards .stretching button:hover, main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos button:hover, main .section-cards-disciplinas .disciplinas-cards .español button:hover, main .section-cards-disciplinas .disciplinas-cards .clasico button:hover, main .section-cards-disciplinas .disciplinas-cards .tango button:hover {
   background-color: white;
   color: #ff4500;
   font-weight: bold;
@@ -48,7 +48,7 @@ header {
 header .navbar1 {
   position: fixed;
   width: 100%;
-  height: 7rem;
+  height: 11rem;
   display: flex;
   justify-content: space-around;
   padding: 2rem;
@@ -63,7 +63,11 @@ header .navbar1 .logo {
   color: whitesmoke;
 }
 header .navbar1 .logo img {
-  width: 15rem;
+  width: 10rem;
+}
+header .navbar1 nav {
+  display: flex;
+  justify-content: center;
 }
 header .navbar1 nav ul {
   display: flex;
@@ -82,7 +86,9 @@ header .navbar1 nav ul li a:hover {
   color: #ff4500;
 }
 header .navbar1 .icon-header {
-  width: 12rem;
+  display: flex;
+  align-items: center;
+  width: 10rem;
 }
 header .navbar1 .icon-header a {
   color: whitesmoke;
@@ -224,6 +230,65 @@ main .section-cards-disciplinas .disciplinas-cards .stretching {
   align-items: center;
   justify-content: space-between;
   padding: 4rem;
+}
+main .section-cards-disciplinas .disciplinas-cards .jazz {
+  background-image: url(../assets/jazz.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+footer {
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+footer .mapa-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+footer .mapa-footer .icons-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .mapa-footer .icons-footer a {
+  color: whitesmoke;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+footer .mapa-footer .icons-footer a:hover {
+  color: #ff4500;
+}
+footer .mapa-footer a img {
+  width: 20rem;
+}
+footer .mapa-footer .footer-mapa ul {
+  list-style: none;
+}
+footer .mapa-footer .footer-mapa ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2.1rem;
+}
+footer .mapa-footer .footer-mapa ul li a:hover {
+  color: #ff4500;
+}
+footer .copy {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+footer .copy p {
+  font-size: 1.5rem;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */

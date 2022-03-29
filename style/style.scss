@@ -22,7 +22,7 @@ header{
     .navbar1{
         position:fixed;
         width: 100%;
-        height: 7rem;
+        height: 11rem;
         display: flex;
         justify-content: space-around;
         padding: 2rem;
@@ -35,10 +35,12 @@ header{
             text-decoration: none;
             color: $color-secondary;
             img{
-                width:15rem;
+                width:10rem;
             }
         }
         nav{
+            display: flex;
+            justify-content:center;
             ul{
                 display: flex;
                 align-items: center;
@@ -57,7 +59,9 @@ header{
             }
         }
         .icon-header{
-            width:12rem;
+            display: flex;
+            align-items: center;
+            width: 10rem;
             a{
                 color: $color-secondary;
                 margin-left: 1rem;
@@ -243,6 +247,80 @@ main{
                     @extend .button-hover;
                 }
             }
+            .jazz{
+                background-image: url(../assets/jazz.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-between;
+                padding: 4rem;
+                .titulo-card{
+                    @extend .titulo-cards;
+                }
+                button{
+                    @extend .button-cards;
+                }
+                button:hover{
+                    @extend .button-hover;
+                }
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    .mapa-footer{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        margin-top: 5rem;
+        .icons-footer{
+            display: flex;
+            align-items: center;
+            flex-direction:column;
+            a{
+                color: $color-secondary;
+                margin-left: 1rem;
+                text-decoration: none;
+                font-size: 2.5rem;
+            }
+            a:hover{
+                color: $color-hover;
+            }
+        }
+        a{
+            img{
+                width: 20rem;
+            }
+        }
+        .footer-mapa{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color:$color-secondary;
+                        font-size: $font-big;
+                    }
+                    a:hover{
+                        color: $color-hover;
+                    }
+                }
+            }
+        }
+    }
+    .copy{
+        margin-left: 3rem;
+        margin-top: 2rem;
+        p{
+            font-size: $font-sm;
+            color: $color-secondary;
         }
     }
 }
