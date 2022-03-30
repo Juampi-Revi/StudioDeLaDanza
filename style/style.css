@@ -21,34 +21,14 @@
   font-weight: bold;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background-color: whitesmoke;
-}
-
 header {
   width: 100%;
-  height: 80rem;
-  background-image: url(../assets/header2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
 }
 header .navbar1 {
-  position: fixed;
   width: 100%;
   height: 11rem;
+  background-color: black;
   display: flex;
   justify-content: space-around;
   padding: 2rem;
@@ -98,7 +78,151 @@ header .navbar1 .icon-header a {
 header .navbar1 .icon-header a:hover {
   color: #ff4500;
 }
-header .texto-bienvenida {
+
+.main-contacto {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../assets/fondoContacto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+.main-contacto form {
+  width: 75vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 0.74);
+  border-radius: 2rem;
+}
+.main-contacto form h1 {
+  text-align: center;
+  text-shadow: 4px -2px 6px rgba(248, 248, 248, 0.86);
+}
+.main-contacto form .formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: #ff4500;
+}
+.main-contacto form .formulario-contacto label {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.main-contacto form .formulario-contacto input {
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.main-contacto form .formulario-contacto textarea {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: gray;
+}
+.main-contacto form button {
+  width: 20rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  margin: 5rem auto 0;
+  font-size: 1.5rem;
+  background-color: #ff4500;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.main-contacto form button:hover {
+  color: #ff4500;
+  background-color: whitesmoke;
+  font-weight: bold;
+  border-color: #ff4500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.header-index {
+  width: 100%;
+  height: 80rem;
+  background-image: url(../assets/header2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.header-index .navbar1 {
+  position: fixed;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 2.1rem;
+  transition: 0.5s;
+  font-weight: bold;
+  text-shadow: 4px -2px 6px rgba(5, 2, 1, 0.86);
+  z-index: 1000;
+}
+.header-index .navbar1 .logo {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.header-index .navbar1 .logo img {
+  width: 10rem;
+}
+.header-index .navbar1 nav {
+  display: flex;
+  justify-content: center;
+}
+.header-index .navbar1 nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.header-index .navbar1 nav ul li {
+  margin-left: 2rem;
+}
+.header-index .navbar1 nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.header-index .navbar1 nav ul li a:hover {
+  color: #ff4500;
+}
+.header-index .navbar1 .icon-header {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+.header-index .navbar1 .icon-header a {
+  color: whitesmoke;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.header-index .navbar1 .icon-header a:hover {
+  color: #ff4500;
+}
+.header-index .texto-bienvenida {
   z-index: 100;
   margin: auto;
   color: whitesmoke;
@@ -107,10 +231,10 @@ header .texto-bienvenida {
   flex-direction: column;
   align-items: center;
 }
-header .texto-bienvenida h1 {
+.header-index .texto-bienvenida h1 {
   font-size: 6rem;
 }
-header .texto-bienvenida h2 {
+.header-index .texto-bienvenida h2 {
   font-size: 3rem;
 }
 
@@ -223,7 +347,7 @@ main .section-cards-disciplinas .disciplinas-cards .ritmosLatinos .titulo-card {
 main .section-cards-disciplinas .disciplinas-cards .stretching {
   background-image: url(../assets/stretching.jpg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -232,9 +356,9 @@ main .section-cards-disciplinas .disciplinas-cards .stretching {
   padding: 4rem;
 }
 main .section-cards-disciplinas .disciplinas-cards .jazz {
-  background-image: url(../assets/jazz.jpg);
+  background-image: url(../assets/danzajazz.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -283,8 +407,8 @@ footer .mapa-footer .footer-mapa ul li a:hover {
   color: #ff4500;
 }
 footer .copy {
-  margin-left: 3rem;
   margin-top: 2rem;
+  text-align: center;
 }
 footer .copy p {
   font-size: 1.5rem;

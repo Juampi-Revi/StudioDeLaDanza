@@ -1,4 +1,5 @@
 @import "variables";
+@import "contacto";
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +12,7 @@ html{
 body{
     background-color: $color-secondary;
 }
-header{
+.header-index{
     width: 100%;
     height: 80rem;
     background-image: url(../assets/header2.jpg);
@@ -230,7 +231,7 @@ main{
             .stretching{
                 background-image: url(../assets/stretching.jpg);
                 background-repeat: no-repeat;
-                background-position: right;
+                background-position: center;
                 background-size: cover;
                 display: flex;
                 flex-direction: column;
@@ -248,9 +249,9 @@ main{
                 }
             }
             .jazz{
-                background-image: url(../assets/jazz.jpg);
+                background-image: url(../assets/danzajazz.jpg);
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: right;
                 background-size: cover;
                 display: flex;
                 flex-direction: column;
@@ -316,8 +317,8 @@ footer{
         }
     }
     .copy{
-        margin-left: 3rem;
         margin-top: 2rem;
+        text-align: center;
         p{
             font-size: $font-sm;
             color: $color-secondary;
