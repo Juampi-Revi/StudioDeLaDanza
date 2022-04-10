@@ -11,18 +11,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="/style/style.css">
     </head>
     <body>
         <header class="header-index">
-            <div class="navbar1 animate__animated animate__backInDown" id="navb">
+            <div class="navbar1 " id="navb">
                 <a class="logo" href="">
                     <img src="./assets/logoblanco.png" alt=""> Studio de la Danza
                 </a>
                 <nav>
                     <ul>
                         <li>
-                            <a href="">Academia</a>
+                            <a href="./pag/academia.html">Academia</a>
                         </li>
                         <li>
                             <a href="">Disciplinas</a> 
@@ -56,7 +57,7 @@
             </div>
         </header>
         <main>
-            <section class="section-presentacion">
+            <section class="section-presentacion"data-aos="fade-right">
                 <img class= "foto-presentacion animate__animated animate__fadeInLeftBig" src="./assets/imagen-main1.jpg" alt="imagenDeBailarinasEnELTeatro">
                 <div class="section-presentacion-texto animate__animated animate__fadeInRight">
                     <img src="./assets/logo1.png" alt="">
@@ -68,27 +69,27 @@
             <section class="section-cards-disciplinas">
                 <h2 class="disciplinas-titulo">Disciplinas</h2>
                 <section class="disciplinas-cards">
-                    <div class="cards clasico">
+                    <div class="cards clasico "data-aos="zoom-in">
                         <h3 class="titulo-card ">CLASICO</h3>
                         <button class="btn btn-primary">Ver mas</button>
                     </div>
-                    <div class="cards tango ">
+                    <div class="cards tango "data-aos="zoom-in">
                         <h3 class="titulo-card">TANGO</h3>
                         <button class="btn btn-primary">Ver mas</button>
                     </div>
-                    <div class="cards español">
+                    <div class="cards español"data-aos="zoom-in">
                         <h3 class="titulo-card ">ESPAÑOL</h3>
                         <button class="btn btn-primary">Ver mas</button>
                     </div>
-                    <div class="cards stretching">
+                    <div class="cards stretching"data-aos="zoom-in">
                         <h3 class="titulo-card">STRETCHING</h3>
                         <button class="btn btn-primary">Ver mas</button>
                     </div>
-                    <div class="cards ritmosLatinos">
+                    <div class="cards ritmosLatinos"data-aos="zoom-in">
                         <h3 class="titulo-card">RITMOS LATINOS</h3>
                         <button class="btn btn-primary">Ver mas</button>
                     </div>
-                    <div class="cards jazz">
+                    <div class="cards jazz"data-aos="zoom-in">
                         <h3 class="titulo-card">DANZA JAZZ</h3>
                         <button class="btn btn-primary">Ver mas</button>
                     </div>
@@ -138,6 +139,10 @@
                 <p>Studio de la danza © 2022. Todos los derechos reservados. Aviso Legal – Política de Privacidad – Política de Cookies</p>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src= "/js/script.js" ></script>
     </body>
 </html>
